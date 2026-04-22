@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Market Place</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+  footer {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd;
+    padding-top: 100px;
+  }
+  .content {
+    padding: 20px;
+    margin-bottom: 80px;
+  }
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #e2e8f0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+  }
+  .nav-item {
+    text-decoration: none;
+    color: #64748b;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .nav-item i {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 3px;
+  }
+  .nav-item.active {
+    color: #3f6758a1;
+  }
+
+  /* Cart badge */
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    background: #ef4444;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 12px;
+  }
+  .cart {
+    background: #0ea5e9;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 30px;
+    transform: translateY(-15px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  }
+  .cart i {
+    margin-bottom: 0;
+  }
+  h1,p{
+    text-align : center; 
+    display : inline-block;
+   }
+   p{
+    text-align : right; 
+   }
+   h4{
+    color: rgb(32, 3, 3);
+   }
+   .distance {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px; 
+   }
+    .price {
+    color: red;
+    font-size: 18px;
+    margin-top: 5px; 
+   }
+   body{
+    background-color: #e3f2fd;
+   }
+</style>
+</head>
+
+<body>
+  <header>
+   <h1> 🛒Marketplace</h1>
+  </header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <form class="d-flex w-100">
+      <input class="form-control me-2 flex-grow-1" type="search" placeholder="Search for nearby items" aria-label="Search">
+      <button class="btn btn-info" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<br>
+
+<nav class="navbar navbar-light " style="background-color:#e3f2fd;">
+  <div class="container-fluid">
+    <a class="navbar-brand"><h4>Nearby Items</h4></a>
+  </div>
+</nav>
+<br>
+      
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="images/phone.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Samsung S26 Ultra</h5>
+        <div class="price">$28</div>
+        <button type="button" class="btn btn-info" action=" ">Buy</button>
+        <p class="distance"> 20km away</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/solarPanel.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Solar Panels</h5>
+        <div class="price">$18</div>
+        <button type="button" class="btn btn-info" action=" ">Buy</button>
+        <p class="distance"> 20km away</p>     
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/mackbook.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MacBook</h5>
+         <div class="price">$18</div>
+        <button type="button" class="btn btn-info" action=" ">Buy</button>
+        <p class="distance"> 20km away</p>     
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/powerbank.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PowerBank</h5>
+         <div class="price">$18</div>
+        <button type="button" class="btn btn-info" action=" ">Buy</button>
+        <p class="distance"> 20km away</p>      
+      </div>
+    </div>
+    </div>
+
+    <div class="col">
+    <div class="card">
+      <img src="images/funiture.jfif" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Italian Furniture</h5>
+         <div class="price">$50</div>
+        <button type="button" class="btn btn-info" action=" ">Buy</button>
+        <p class="distance"> 20km away</p> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+<div class="bottom-nav">
+  <a href="index.html" class="nav-item active">
+    <i>🏠</i>
+    Home
+  </a>
+  <a href="https://www.google.com/search?q=site:example.com+SEO+services" target="_blank" rel="noopener noreferrer" class="nav-item">
+    <i>🔍</i>
+    Search
+  </a>
+  <a href="cart.html" class="nav-item cart">
+    <span class="badge">2</span>
+    <i>🛒</i>
+    Cart
+  </a>
+</div>
+</footer>
+  <script src="js/mains.js"></script>
+</body>
+</html>
